@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Eightball from './Eightball';
 
@@ -24,7 +23,11 @@ const answers = [
   { msg: "Outlook not so good.", color: "red" },
   { msg: "Very doubtful.", color: "red" },
 ];
+// TODO: PUT answers in a file and make it the default.
 
+/** Simulates an eightball, displaying a random entry (with a msg and color)
+ *      upon each click.
+ */
 function App() {
   return <Eightball answers={answers}/>
 }
